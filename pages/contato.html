@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/contato.css">
+    <link href='https://css.gg/phone.css' rel='stylesheet'>
+    <link href='https://css.gg/mail.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../style/reset.css"/>
+    <link rel="shortcut icon" href="../imgs/shortLogo.png">
+    
+    <title>Contato</title>
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="bt_menu"> 
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html"><img id="logo" src="../imgs/logo2.png" width="185" height="95" alt="Logo da Contexto Brasil"></a></li>
+
+                <li id="outros"><a href="home.html" >HOME</a></li>
+    
+                <li id="outros"><a href="servicos.html" >SERVIÇOS</a></li>
+    
+                <li id="outros"><a href="#" >CONTATO</a></li>
+    
+            </ul>
+    
+        </nav>
+    </header>
+    <main>
+        <div id="carregando"></div>
+        <h1 id="titulo">CONTATOS</h1>
+        <section id="parteDosItens">
+                <div class="itens" id="tell">
+                    <img src="../imgs/phone.png" alt="Imagem de telefone">
+                    <span>Telefone</span>
+                    <span>(24) 98135-9885</span>
+                </div>
+                <div class="itens" id="mail">
+                    <img src="../imgs/email.png" alt="Imagem de e-mail">
+                    <span>E-mail</span>
+                    <span>contextobrasil@contextobrasil.com</span>
+                </div>
+                <div class="itens" id="site">
+                    <img src="../imgs/site.png" alt="Imagem de web">
+                    <span>Website</span>
+                    <span>contextobrasil.com</span>
+                </div>
+            </div>
+        </section>
+        <section id="formulario">
+            <h1 id="titulo2"><br>FALE CONOSCO</h1>
+            <div class="formulario">
+                    <form action="https://formsubmit.co/cc44e4e8fe54768aa0ad48a558c26e8a" method="POST" id="contact">
+                        <label for="Assunto">Seu e-mail</label>
+                        <input type="text" name="Email" id="assunt" required>
+                        <label for="Assunto">Nome</label>
+                        <input type="text" name="Nome" id="assunt" required>
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" name="Assunto" id="assunt" required>
+                        <label for="Menssagem">Menssagem</label>
+                        <textarea name="Menssagem" id="msg" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://contextobrasil.com/pages/obrigado.html">
+                        <input type="submit" value="Enviar" id="button">
+                    </form>
+            </div>
+        </section>
+    </main>
+    <section class="footer">
+        <div class="conteudoPagina">
+    
+            <p>
+                <span id="titulos">Sobre nós</span><br><br>
+                A Contexto Brasil é uma empresa de pesquisa, que atua no
+                mercado desde 2002. Com sede no Rio de Janeiro, vem
+                desde sua criação, aperfeiçoando sua estrutura para
+                atendimento em todo o território nacional. Presta serviços em diversas 
+                áreas de atuação, com destaque para gestão pública, política e mercado.<br><br>
+    
+                <span id="titulos">Entre em contato</span><br><br>
+                 Email: contextobrasil@contextobrasil.com<br>
+                 Telefone: (24) 98135-9885
+             </p>
+             <img id="logo" src="../imgs/logo2.png" width="192px" height="108px" alt="Logo da Contexto Brasil">
+        </div>
+        </section>  
+
+        <script>
+        window.onload = function() {
+            document.getElementById("carregando").style.display = "none";
+            };
+        </script>
+</body>

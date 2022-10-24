@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.conteudoCabecalho{
+    background-image: url(../imgs/foto2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho h1{
+    margin-top: 100px;
+    font-size: 110px;
+    color: white;
+}
+
+.cabecalho, .texto{
+    color: white;
+    text-align: justify;
+}
+
+.fundoTexto{
+    width: 85%;
+    background-color: #111111a2;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+
+}
+
+.texto{
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.conteudoPagina{
+    background-color: #111111;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudoPagina p{
+    padding: 30px;
+    width: 70%;
+    color: white;
+    font-weight: 200;
+}
+
+.menus{
+    float: left;
+    margin-top: 50px;
+}
+
+.menus button{
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111111;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 1s;
+    background: white;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.menus button:hover{
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.171);
+    border-radius: 50px;
+    background: rgba(240, 255, 255, 0.5);
+}
+
+#titulos{
+    font-size: 25px;
+}
+
+#carregando{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 10px solid #111111;
+    border-top: 10px solid rgb(53, 131, 133);
+    border-radius: 50%;
+    animation: carregando 2s infinite linear;
+    position: absolute;
+    margin: 10px;
+    display: block;
+}
+
+@keyframes carregando{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-device-width: 600px){
+    .cabecalho h1{
+        font-size: 60px;
+        margin-top: 150px;
+    }
+    
+    .fundoTexto{
+        background-color: #111111a2;
+        padding: 20px;
+    }
+
+    .menus button{
+        width: 90px;
+        height: 24px;
+        margin: 15px;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+
+    .conteudoPagina{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .conteudoPagina p{
+        width: 100%;
+    }
+
+    .conteudoPagina img{
+        margin-top: 40px;
+    }
+
+    .texto{
+        font-size: 18px;
+        padding: 0;
+    }
+
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+

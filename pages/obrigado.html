@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/reset.css"/>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        body{
+            background-image: url(../imgs/foto3.png);
+            background-position: 0;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .textoBoasVindas{
+            margin-top: 85px;
+            width: 80%;
+            background: rgba(91, 115, 113, 0.42);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.326);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.379);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .textoBoasVindas h1{
+            color: white;
+            font-size: 65px;
+        }
+
+        .textoBoasVindas h2{
+            color: white;
+            font-size: 30px;
+        }
+
+        .textoBoasVindas p{
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width: 1000px){
+            .textoBoasVindas{
+                width: 90%;
+                height: 300px;
+            }
+
+            #logo{
+                width: 300px;
+                height: 170px;
+            }
+
+            .textoBoasVindas h1{
+                font-size: 40px;
+            }
+
+            .textoBoasVindas h2{
+                margin-top: 75px;
+                font-size: 25px;
+                background-color: rgba(0, 0, 0, 0.326);
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+    <link rel="shortcut icon" href="../imgs/shortLogo.png">
+    <title>Obrigado!</title>
+</head>
+<body>
+    <main>
+    <center>
+    <div class="textoBoasVindas">
+        <img id ="logo"src="../imgs/logo.png" width="850" height="450" alt="Logo da Contexto Brasil">
+        <h1>Obrigado por entrar em contato!</h1><br>
+        <h2>Respoderemos sua mensagem asssim que for possível!</h2><br><br>
+        <p>Para retornar a página inicial do site clique <a href="../index.html">aqui</a>.</p>
+    </div>
+    </main>
+    </center>
+</body>
+</html>

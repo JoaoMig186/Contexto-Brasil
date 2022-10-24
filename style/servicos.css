@@ -1,0 +1,565 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.fundoPrincipal{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    width: 100%;    
+    height: 129px;
+    background-color: #111111;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0 20px black;
+}
+
+#outros a{ 
+    font-size: 20px;
+    text-align: center;
+    padding: 52px;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 250px;
+    float: left;
+}
+.menu a{
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    background-color: #111111;
+    text-align: center;
+    color: white;
+    height: 129px;
+
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+
+}
+
+.menu a:hover {
+    background-color: #969696;
+    color: #fff;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 2px white;
+}
+
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #111111;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 55px;
+    cursor: pointer;
+    width: 100%;
+    height: 70px;
+}
+
+#bt_menu{
+    display: none;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
+#carregando{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 10px solid #111111;
+    border-top: 10px solid rgb(53, 131, 133);
+    border-radius: 50%;
+    animation: carregando 2s infinite linear;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+@keyframes carregando{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.titulo{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 70px;
+    animation: texto 1.5s .4s both;
+    color: #111111;
+}
+
+#linha{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    flex-direction: row;
+    text-align: center;
+    animation: glup .4s .9s both, bolinha .5s 1.2s both, sumir 1s 1.8s both;
+}
+
+@keyframes texto{
+    from{
+        font-size: 0px;
+    } to{
+        font-size: 70px;
+    }
+}
+
+@keyframes glup{
+    from{
+        opacity: 0;
+    } to{
+    background-color: #121212;
+        opacity: 1;
+    }
+}
+
+@keyframes bolinha{
+    from{
+        width: 10px;
+    } to{
+        width: 500px;
+    }
+}
+
+    @keyframes sumir{
+        from{
+            height: 4px;
+            opacity: 1;
+        }
+        to{
+            height: 0px;
+            opacity: 0;
+        }
+    }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    margin-top: 70px;
+}
+
+#conjunto{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    /* tirado em--> https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conjunto h2{
+    margin-top: 75px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: #111111;
+}
+
+#conjunto p{
+    display: flex;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+
+#conjunto:hover{
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.SecConteudo{
+    margin-bottom: 200px;
+}
+
+#titulos{
+    font-size: 25px;
+}
+
+.conteudoPagina{
+    background-color: #111111;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudoPagina p{
+    padding: 30px;
+    width: 70%;
+    color: white;
+    font-weight: 200;
+}
+
+a{
+    color: black;
+}
+
+#contentSeta{
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#seta{
+    padding-bottom: 35px;
+    width: 60px;
+    height: 60px;
+    padding-top: 1px;
+    box-shadow: 4px -4px 0 3px #111111 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(315deg);
+    cursor: pointer;
+    border-radius: 8px;
+    animation: setinha 1s .9s both;
+  }
+
+  @keyframes setinha{
+      from{
+        padding-bottom: 10px;
+        width: 10px;
+        height: 10px;
+      } to {
+        padding-bottom: 45px;
+        width: 70px;
+        height: 70px;
+      }
+  }
+
+#seta:hover{
+    border-color: aqua;
+}
+
+#quantQuali{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+#quantiQualiP{
+    position: absolute;
+    color:black;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+#espaço{
+    display: flex;
+    margin-top: 100px;
+}
+.quantH2{
+    font-size: 70px;
+    color: #024b62;
+    text-align: center;
+    cursor:pointer;
+    margin: 50px;
+}
+
+.textoQuanti{
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    color:#024b62;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.textoQuali{
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    color:#01a89e;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+
+.qualiH2{
+    font-size: 70px;
+    color: #01a89e;
+    text-align: center;
+    cursor:pointer;
+    margin: 50px;
+}
+
+#bold{
+    font-weight: 400;
+}
+
+
+.quant:hover .textoQuanti{
+    opacity: 1;
+}
+
+
+.quali:hover .textoQuali{
+    opacity: 1;
+    
+}
+
+.mainBox{
+    margin: 0 auto;
+    width: 310px;
+    height: 450px;
+    background-color: #01a89e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.littleBox{
+    width: 280px;
+    height: 60px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.littleBox h3{
+    display: flex;
+    font-size: 27px;
+    color: #01a89e;
+}
+.mainBox .texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 17px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 25px;
+}
+
+/*-------------------------------------------------------------*/
+
+.mainBox2{
+    margin: 0 auto;
+    width: 310px;
+    height: 590px;
+    background-color: #024b62;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.littleBox2{
+    width: 280px;
+    height: 50px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.littleBox2 h3{
+    display: flex;
+    font-size: 27px;
+    color: #024b62;
+}
+
+.mainBox2 .texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 17px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.mobQuantiQuali{
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+}
+
+@media(max-width: 1000px){
+
+    label[for="bt_menu"]{
+    display: block;
+    }
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+        box-shadow: 0px 0 10px black;
+        margin-bottom: 450px;
+    }
+    
+    .menu{
+        margin-left: -100%;
+        transition: all .4s;
+        box-shadow: none;
+    }
+    
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+
+    }
+    .menu a:hover {
+    background-color: #969696;
+    color: #111111;
+    }
+
+    .menu a{
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    color: azure;
+    background-color: #111111;
+    text-align: center;
+    }
+    .menu ul ul li a{
+        background-color:#969696 ;
+        color: #111111;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo{
+        color:black;
+    }
+
+    #conjunto{
+        margin-bottom: 50px;
+    }
+
+    .conteudoPagina{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .conteudoPagina p{
+        width: 100%;
+    }
+
+    .conteudoPagina img{
+        margin-top: 40px;
+    }
+
+    #seta{
+        display: none;
+    }
+
+    .SecConteudo{
+        margin-bottom: 50px;
+    }
+
+    #quantQuali{
+        display: none;
+    }
+
+    .qualiH2{
+        display: none;
+    }
+
+    .quantH2{
+        display: none;
+    }
+
+    #pre-texto{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .mobQuantiQuali{
+        display: flex;
+    }
+
+
+    #parteFinal{
+        margin-top: 30px;
+        padding: 20px;
+        color: black;
+        font-weight: 100;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: none;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    #carregando{
+        margin-top: 105px;
+    }
+}
+
