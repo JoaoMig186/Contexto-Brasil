@@ -108,11 +108,10 @@ label[for="bt_menu"]{
 }
 
 .titulo{
-    font-size: 70px;
     text-align: center;
-    margin-top: 70px;
     animation: texto 1.5s .4s both;
     color: #111111;
+    margin-top: 100px;
 }
 
 #linha{
@@ -128,7 +127,7 @@ label[for="bt_menu"]{
     from{
         font-size: 0px;
     } to{
-        font-size: 70px;
+        font-size: 45px;
     }
 }
 
@@ -165,7 +164,7 @@ label[for="bt_menu"]{
     flex-direction: row;
     justify-content:space-evenly;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 #conjunto{
@@ -359,10 +358,11 @@ a{
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .littleBox{
     width: 280px;
-    height: 60px;
+    height: 50px;
     background-color: white;
     border-radius: 40px;
     margin: 0 auto;
@@ -395,6 +395,7 @@ a{
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .littleBox2{
@@ -437,10 +438,15 @@ a{
     label[for="bt_menu"]{
     display: block;
     }
+
     #bt_menu:checked ~ .menu{
         margin-left: 0;
         box-shadow: 0px 0 10px black;
         margin-bottom: 450px;
+    }
+
+    .titulo{
+        margin-top: 0;
     }
     
     .menu{
@@ -490,10 +496,6 @@ a{
         align-items: center;
     }
 
-    .titulo{
-        color:black;
-    }
-
     #conjunto{
         margin-bottom: 50px;
     }
@@ -535,7 +537,7 @@ a{
     }
 
     #pre-texto{
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin-bottom: 50px;
     }
@@ -543,7 +545,6 @@ a{
     .mobQuantiQuali{
         display: flex;
     }
-
 
     #parteFinal{
         margin-top: 30px;
